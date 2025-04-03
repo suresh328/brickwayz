@@ -1,0 +1,71 @@
+# Node.jsnode_modules/
+npm-debug.log
+yarn-error.log
+# Environment variables
+.en# Logs
+logs/
+*.log# Build output
+dist/build/
+# IDE and editor files
+.vscode/.idea/
+*.swp
+*.swo# OS generated files
+.DS_StoreThumbs.db
+
+# Temporary files
+*.tm*.temp
+
+./node_modules
+node_modules
+
+# Test coveragcoverage/
+# Dependency directories
+jspm_packages/bower_components/
+# Optional npm cache directory.npm
+
+# Optional eslint cache.eslintcache
+# Optional REPL history.node_repl_history
+
+# Output of 'npm pack'*.tgz
+# Yarn Integrity file.yarn-integrity
+# dotenv environment variables file
+.env.test
+.env.production
+# serverless
+.serverless
+# TypeScript cache*.tsbuildinfo
+# Optional npm cache directory.npm
+# Optional eslint cache
+.eslintcache
+
+
+
+
+
+/
+
+
+
+
+
+
+
+
+
+
+
+
+e
+p
+
+
+
+
+
+
+
+
+
+v
+
+
