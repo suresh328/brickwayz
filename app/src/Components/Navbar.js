@@ -3,9 +3,7 @@ import applogo from "./../Assets/app_logo.png";
 
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  // Close menu when clicking outside
+  const [menuOpen, setMenuOpen] = useState(true);
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".navbar")) {
@@ -23,9 +21,15 @@ const Navbar = () => {
   }, [menuOpen]);
 
   const handleScroll = (section) => {
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // Close menu when clicking a link
+    const element = document.getElementById(section);
+    if (element) {
+      const yOffset = -60; // adjust based on your navbar height
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    setMenuOpen(true);
   };
+
 
   return (
     <div className="main_container">

@@ -10,6 +10,7 @@ import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 import Programs from './Components/Programs';
 import Testimonials from './Components/Testimonials';
+import ChooseUs from './Components/ChooseUs';
 
 function App() {
   const homeRef = useRef(null)
@@ -32,12 +33,14 @@ function App() {
     <>
       <div>
         <Navbar sectionRefs={sectionRefs} />
-        
-        <div ref={homeRef} style={{overflow:"hidden"}}><Hero /></div>
+
+        <div ref={homeRef} style={{ overflow: "hidden" }}><Hero /></div>
         <div ref={aboutRef}><About /></div>
         <div ref={programsRef}><Programs /></div>
-        <Countries/>
+        <Countries />
+        <ChooseUs />
         <div ref={testimonialsRef}><Testimonials /></div>
+        <FAQ />
         <div ref={blogRef}><Blog /></div>
         <div ref={contactRef}><Contact /></div>
         <Footer />

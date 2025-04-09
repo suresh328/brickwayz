@@ -31,7 +31,7 @@ const limiter = rateLimit({
   legacyHeaders: false,
   message: "Too many requests from this IP, please try again later",
 });
-app.use("/send-email", limiter);
+app.use("/api/sendmail", limiter);
 
 // Create nodemailer transporter
 const createTransporter = () => {
@@ -69,17 +69,17 @@ const verifyTransporter = async () => {
 
 // Route validation
 const emailValidation = [
-  body("to").isEmail().withMessage("Valid email required"),
-  body("subject").isString().trim().notEmpty().withMessage("Subject required"),
-  body("text").isString().trim().notEmpty().withMessage("Email body required"),
-  body("html").optional().isString(),
-  body("cc").optional().isArray(),
-  body("bcc").optional().isArray(),
-  body("attachments").optional().isArray(),
+  body("email").isEmail().withMessage("Valid email required"),
+  body("enquiry").isString().trim().notEmpty().withMessage("enquiry required"),
+  body("message").isString().trim().notEmpty().withMessage("message body required"),
+  body("firstName").isString().trim().notEmpty().withMessage("firstName body required"),
+  body("lastName").isString().trim().notEmpty().withMessage("lastName body required"),
+
+ 
 ];
 
 // Email sending route
-app.post("/send-email", emailValidation, async (req, res) => {
+app.post("/api/sendmail", emailValidation, async (req, res) => {
   try {
     // Validation check
     const errors = validationResult(req);
@@ -87,17 +87,15 @@ app.post("/send-email", emailValidation, async (req, res) => {
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { to, subject, text, html, cc, bcc, attachments } = req.body;
+    const { enquiry, email, firstName, lastName, message, } = req.body;
 
     const mailOptions = {
       from: process.env.FROM_EMAIL || "noreply@example.com",
-      to,
-      subject,
-      text,
-      html,
-      cc,
-      bcc,
-      attachments,
+      to: email,
+      subject: `${firstName}${lastName}${enquiry}`,
+      text: message,
+      // cc,
+
     };
 
     // Ensure transporter is ready

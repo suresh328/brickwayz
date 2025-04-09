@@ -45,7 +45,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='main_container'>
+      <div className='main_container'  id='About'>
         <section className="about">
 
           <div className='about_header'>

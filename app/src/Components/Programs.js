@@ -3,10 +3,10 @@ import React from 'react'
 const Programs = () => {
   return (
     <>
-      <div className='main_container'>
+      <div className='main_container' id='OurPrograms'>
         <div className='ourprogram_container'>
           <h2 className='ourprogram_tittle'>Our Programs</h2>
-          <div class="program">
+          <div className="program">
             <h3 className='program_header'>Career Counselling</h3>
             <p className='programe_para'>Our dedicated career counselors provide individualized support to help you discover your true potential.</p>
             <h4 className='programe_offer'>We offer:</h4>
@@ -18,7 +18,7 @@ const Programs = () => {
           </div>
 
           <div style={{ width:"100%", display:"flex", alignItems:"center", justifyContent:"center" }}>
-          <button className='program_linkbtn'>
+          <button className='program_linkbtn'  onClick={() => window.scrollTo({ top: document.getElementById('Contact').offsetTop, behavior: 'smooth' })}>
             Apply
           </button>
           </div>

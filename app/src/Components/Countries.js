@@ -85,7 +85,8 @@ const Countries = () => {
 
         {/* Button */}
         <div className="button-container">
-          <button className="apply-button">Apply Online</button>
+          <button className="apply-button"  onClick={() => window.scrollTo({ top: document.getElementById('Contact').offsetTop, behavior: 'smooth' })} >
+            Apply Online</button>
         </div>
 
         

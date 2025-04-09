@@ -50,6 +50,7 @@
 
 import React, { useState } from "react";
 import "./../Style/Custom.css";
+import axios from "axios"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -64,13 +65,19 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted", formData);
+  
+    try {
+      const response = await axios.post("http://localhost:7000/api/sendmail", formData);
+      console.log("Form submitted successfully", response.data);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
-    <div className="main_container">
+    <div className="main_container" id="Contact">
 
     <form className="contact-form" onSubmit={handleSubmit}>
       <h2 className="contact-title">Contact Form</h2>

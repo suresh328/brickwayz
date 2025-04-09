@@ -55,7 +55,7 @@ const Testimonials = () => {
     testimonialsData[currentIndex];
 
   return (
-    <div className='main_container'>
+    <div className='main_container' id='Testimonials'>
 
     <section className="testimonials-section">
       {/* Main Heading */}
