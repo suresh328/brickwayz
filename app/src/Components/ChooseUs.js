@@ -11,10 +11,13 @@ const ChooseUs = () => {
 
   return (
     <div className="chooseus__container">
-     
+
 
       {/* Why Choose Us Section */}
-      <h2 className="chooseus__heading">Why Choose Us?</h2>
+      <div className='All_Heading'>
+
+        <h2 >Why Choose Us?</h2>
+      </div>
       <div className="chooseus__features">
 
         {/* Feature 1 */}

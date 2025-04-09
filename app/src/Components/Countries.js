@@ -54,27 +54,31 @@ const Countries = () => {
     <div className='main_container'>
       <section className="study-abroad-section">
 
-        {/* Section Title */}
-        <h2 className="studyabroad_title">Study Abroad</h2>
+          {/* Section Title */}
+          <h2 className="studyabroad_title">Study Abroad</h2>
 
-        {/* Bullet Points */}
-        <ul className="studyabroad_bullet-list">
-          <li><strong>University Selection:</strong> Identifying institutions that align with your academic goals and preferences.</li>
-          <li><strong>Academic Planning:</strong> Streamlining the application process for a seamless experience.</li>
-          <li><strong>Scholarship Counselling:</strong> Assisting you in searching and applying for funding opportunities.</li>
-          <li><strong>Visa Assistance:</strong> Detailed support to guide you through the visa application process.</li>
-        </ul>
+          {/* Bullet Points */}
+          <ul className="studyabroad_bullet-list">
+            <li><strong>University Selection:</strong> Identifying institutions that align with your academic goals and preferences.</li>
+            <li><strong>Academic Planning:</strong> Streamlining the application process for a seamless experience.</li>
+            <li><strong>Scholarship Counselling:</strong> Assisting you in searching and applying for funding opportunities.</li>
+            <li><strong>Visa Assistance:</strong> Detailed support to guide you through the visa application process.</li>
+          </ul>
+          <h2 className="chooseus__heading">Training Programs</h2>
+          <div className="chooseus__section">
+            <p className="chooseus__text"><strong>Standardized Test Preparation:</strong> Complete coaching for tests like IELTS, TOEFL, GRE, GMAT, and SAT, ensuring you achieve the scores needed for your desired programs.</p>
+            <p className="chooseus__text"><strong>STEM Learning:</strong> Attend workshops that incorporate Science, Technology, Engineering, and Math with hands-on projects.</p>
+            <p className="chooseus__text"><strong>Robotics & Coding:</strong> Explore the realm of technology with interactive coding classes and robotics challenges.</p>
+            <p className="chooseus__text"><strong>Creative Building:</strong> Develop creativity through creative building activities that promote problem solving.</p>
+            <p className="chooseus__text"><strong>Holiday Camps:</strong> Engage in holiday camps that blend learning with fun activities.</p>
+          </div>
 
-        {/* Training Programs Section */}
-        <h2 className="chooseus__heading">Training Programs</h2>
-        <div className="chooseus__section">
-          <p className="chooseus__text"><strong>Standardized Test Preparation:</strong> Complete coaching for tests like IELTS, TOEFL, GRE, GMAT, and SAT, ensuring you achieve the scores needed for your desired programs.</p>
-          <p className="chooseus__text"><strong>STEM Learning:</strong> Attend workshops that incorporate Science, Technology, Engineering, and Math with hands-on projects.</p>
-          <p className="chooseus__text"><strong>Robotics & Coding:</strong> Explore the realm of technology with interactive coding classes and robotics challenges.</p>
-          <p className="chooseus__text"><strong>Creative Building:</strong> Develop creativity through creative building activities that promote problem solving.</p>
-          <p className="chooseus__text"><strong>Holiday Camps:</strong> Engage in holiday camps that blend learning with fun activities.</p>
+
+        <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <button className='program_linkbtn' onClick={() => window.scrollTo({ top: document.getElementById('Contact').offsetTop, behavior: 'smooth' })}>
+            Apply
+          </button>
         </div>
-
         {/* Subtitle */}
         <p className="subtitle">Our global network includes top universities in:</p>
 

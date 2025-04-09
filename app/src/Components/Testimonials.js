@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import "./../Style/Custom.css"
-import test from "./../Assets/testimonial.png"
+import test from "./../Assets/blank.jpg"
+
 
 const Testimonials = () => {
   // 3 static testimonial entries (each with a subheading, image, and 2 quotes).
@@ -59,7 +60,10 @@ const Testimonials = () => {
 
     <section className="testimonials-section">
       {/* Main Heading */}
-      <h2 className="testimonials-heading">Testimonials</h2>
+      <div className='All_Heading testimonials_heading'>
+
+      <h2 >Testimonials</h2>
+      </div>
 
       <div className="testimonial-container">
         {/* Left Arrow */}
