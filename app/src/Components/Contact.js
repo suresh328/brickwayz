@@ -57,6 +57,7 @@ const Contact = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
     enquiry: "Career Counselling",
     message: ""
   });
@@ -107,6 +108,15 @@ const Contact = () => {
           className="contact-input"
           placeholder="*Email Address"
           value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="phone"
+          name="phone"
+          className="contact-input"
+          placeholder="*Contact Number"
+          value={formData.phone}
           onChange={handleChange}
           required
         />
