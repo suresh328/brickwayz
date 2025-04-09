@@ -74,6 +74,7 @@ const emailValidation = [
   body("message").isString().trim().notEmpty().withMessage("message body required"),
   body("firstName").isString().trim().notEmpty().withMessage("firstName body required"),
   body("lastName").isString().trim().notEmpty().withMessage("lastName body required"),
+  body("phone").optional().isString().trim().notEmpty().withMessage("phone body required"),
 
 
 ];
@@ -87,15 +88,50 @@ app.post("/api/sendmail", emailValidation, async (req, res) => {
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { enquiry, email, firstName, lastName, message, } = req.body;
+    const { enquiry, email, firstName, lastName, message, phone } = req.body;
+
+    const html = `
+  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #ffffff;">
+    <h2 style="color: #333;">📩 New Contact Form Submission</h2>
+
+    <p style="color: #555;">You have received a new enquiry from your website contact form.</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #333;">First Name:</td>
+        <td style="padding: 8px; color: #555;">${firstName}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #333;">Last Name:</td>
+        <td style="padding: 8px; color: #555;">${lastName}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #333;">Email:</td>
+        <td style="padding: 8px; color: #555;">${email}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #333;">Phone:</td>
+        <td style="padding: 8px; color: #555;">${phone || "Not provided"}</td>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #333;">Enquiry Type:</td>
+        <td style="padding: 8px; color: #555;">${enquiry}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #333;">Message:</td>
+        <td style="padding: 8px; color: #555;">${message}</td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 30px; font-size: 13px; color: #999;">This message was sent from your website's contact form.</p>
+  </div>
+`;
+
 
     const mailOptions = {
       from: process.env.FROM_EMAIL || "noreply@example.com",
       to: process.env.TO_EMAIL,
-      subject: `${firstName}${lastName}${enquiry}${email}`,
-      text: message,
-      // cc,
-
+      subject: `New Contact Form Submission – ${firstName} ${lastName}`,
+      html,
     };
 
     // Ensure transporter is ready
