@@ -92,7 +92,7 @@ app.post("/api/sendmail", emailValidation, async (req, res) => {
 
     const html = `
   <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #ffffff;">
-    <h2 style="color: #333;">📩 New Contact Form Submission</h2>
+    <h2 style="color: #333;">📩 ${enquiry} from ${firstName}</h2>
 
     <p style="color: #555;">You have received a new enquiry from your website contact form.</p>
 
@@ -130,7 +130,7 @@ app.post("/api/sendmail", emailValidation, async (req, res) => {
     const mailOptions = {
       from: process.env.FROM_EMAIL || "noreply@example.com",
       to: process.env.TO_EMAIL,
-      subject: `New Contact Form Submission – ${firstName} ${lastName}`,
+      subject: `Brickwayz Enquiry – ${firstName} ${lastName}`,
       html,
     };
 
