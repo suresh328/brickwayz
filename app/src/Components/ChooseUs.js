@@ -11,15 +11,7 @@ const ChooseUs = () => {
 
   return (
     <div className="chooseus__container">
-      {/* Training Programs Section */}
-      <h2 className="chooseus__heading">Training Programs</h2>
-      <div className="chooseus__section">
-        <p className="chooseus__text"><strong>Standardized Test Preparation:</strong> Complete coaching for tests like IELTS, TOEFL, GRE, GMAT, and SAT, ensuring you achieve the scores needed for your desired programs.</p>
-        <p className="chooseus__text"><strong>STEM Learning:</strong> Attend workshops that incorporate Science, Technology, Engineering, and Math with hands-on projects.</p>
-        <p className="chooseus__text"><strong>Robotics & Coding:</strong> Explore the realm of technology with interactive coding classes and robotics challenges.</p>
-        <p className="chooseus__text"><strong>Creative Building:</strong> Develop creativity through creative building activities that promote problem solving.</p>
-        <p className="chooseus__text"><strong>Holiday Camps:</strong> Engage in holiday camps that blend learning with fun activities.</p>
-      </div>
+     
 
       {/* Why Choose Us Section */}
       <h2 className="chooseus__heading">Why Choose Us?</h2>

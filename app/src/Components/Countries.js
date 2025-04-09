@@ -53,6 +53,7 @@ const Countries = () => {
   return (
     <div className='main_container'>
       <section className="study-abroad-section">
+
         {/* Section Title */}
         <h2 className="studyabroad_title">Study Abroad</h2>
 
@@ -63,6 +64,16 @@ const Countries = () => {
           <li><strong>Scholarship Counselling:</strong> Assisting you in searching and applying for funding opportunities.</li>
           <li><strong>Visa Assistance:</strong> Detailed support to guide you through the visa application process.</li>
         </ul>
+
+        {/* Training Programs Section */}
+        <h2 className="chooseus__heading">Training Programs</h2>
+        <div className="chooseus__section">
+          <p className="chooseus__text"><strong>Standardized Test Preparation:</strong> Complete coaching for tests like IELTS, TOEFL, GRE, GMAT, and SAT, ensuring you achieve the scores needed for your desired programs.</p>
+          <p className="chooseus__text"><strong>STEM Learning:</strong> Attend workshops that incorporate Science, Technology, Engineering, and Math with hands-on projects.</p>
+          <p className="chooseus__text"><strong>Robotics & Coding:</strong> Explore the realm of technology with interactive coding classes and robotics challenges.</p>
+          <p className="chooseus__text"><strong>Creative Building:</strong> Develop creativity through creative building activities that promote problem solving.</p>
+          <p className="chooseus__text"><strong>Holiday Camps:</strong> Engage in holiday camps that blend learning with fun activities.</p>
+        </div>
 
         {/* Subtitle */}
         <p className="subtitle">Our global network includes top universities in:</p>
@@ -85,32 +96,32 @@ const Countries = () => {
 
         {/* Button */}
         <div className="button-container">
-          <button className="apply-button"  onClick={() => window.scrollTo({ top: document.getElementById('Contact').offsetTop, behavior: 'smooth' })} >
+          <button className="apply-button" onClick={() => window.scrollTo({ top: document.getElementById('Contact').offsetTop, behavior: 'smooth' })} >
             Apply Online</button>
         </div>
 
-        
-          <section className="explore_section">
-            {/* Section Title */}
-            <h2 className="explore_sectiontitle">Explore Diverse Academic Disciplines</h2>
 
-            {/* Grid Layout */}
-            <div className="explore_section_grid">
-              {explore.map((country) => (
-                <div key={country.name} className="explore_card">
+        <section className="explore_section">
+          {/* Section Title */}
+          <h2 className="explore_sectiontitle">Explore Diverse Academic Disciplines</h2>
+
+          {/* Grid Layout */}
+          <div className="explore_section_grid">
+            {explore.map((country) => (
+              <div key={country.name} className="explore_card">
                 <div className='explore_image'>
-                <img
+                  <img
                     src={country.img}
                     alt={country.name}
                     className="flag-image"
                   />
                 </div>
-                  <p className="explore_name">{country.name}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-       
+                <p className="explore_name">{country.name}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
       </section>
     </div>
   );

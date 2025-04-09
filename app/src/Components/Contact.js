@@ -51,6 +51,7 @@
 import React, { useState } from "react";
 import "./../Style/Custom.css";
 import axios from "axios"
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -61,18 +62,43 @@ const Contact = () => {
     enquiry: "Career Counselling",
     message: ""
   });
-
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const response = await axios.post("https://brickwayz.onrender.com/api/sendmail", formData);
-      console.log("Form submitted successfully", response.data);
+  
+      // Show SweetAlert success message
+      Swal.fire({
+        title: "Success!",
+        text: "Your message has been sent successfully.",
+        icon: "success",
+        confirmButtonText: "Okay"
+      });
+  
+      // Reset the form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        enquiry: "Career Counselling",
+        message: ""
+      });
+  
     } catch (error) {
+      // Show SweetAlert error message
+      Swal.fire({
+        title: "Error!",
+        text: "There was an issue submitting the form. Please try again.",
+        icon: "error",
+        confirmButtonText: "Okay"
+      });
       console.error("Error submitting form:", error);
     }
   };
