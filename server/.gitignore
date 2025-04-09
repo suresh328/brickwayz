@@ -31,6 +31,8 @@ jspm_packages/bower_components/
 # dotenv environment variables file
 .env.test
 .env.production
+env
+.env
 # serverless
 .serverless
 # TypeScript cache*.tsbuildinfo

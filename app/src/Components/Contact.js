@@ -67,9 +67,9 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
-      const response = await axios.post("http://localhost:7000/api/sendmail", formData);
+      const response = await axios.post("https://brickwayz.onrender.com/api/sendmail", formData);
       console.log("Form submitted successfully", response.data);
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -79,60 +79,60 @@ const Contact = () => {
   return (
     <div className="main_container" id="Contact">
 
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <h2 className="contact-title">Contact Form</h2>
-      <div className="contact-input-group">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <h2 className="contact-title">Contact Form</h2>
+        <div className="contact-input-group">
+          <input
+            type="text"
+            name="firstName"
+            className="contact-input"
+            placeholder="*First Name"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            className="contact-input"
+            placeholder="*Last Name"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <input
-          type="text"
-          name="firstName"
+          type="email"
+          name="email"
           className="contact-input"
-          placeholder="*First Name"
-          value={formData.firstName}
+          placeholder="*Email Address"
+          value={formData.email}
           onChange={handleChange}
           required
         />
-        <input
-          type="text"
-          name="lastName"
-          className="contact-input"
-          placeholder="*Last Name"
-          value={formData.lastName}
+        <label className="contact-label">Enquiry:</label>
+        <select
+          name="enquiry"
+          className="contact-dropdown"
+          value={formData.enquiry}
           onChange={handleChange}
-          required
-        />
-      </div>
-      <input
-        type="email"
-        name="email"
-        className="contact-input"
-        placeholder="*Email Address"
-        value={formData.email}
-        onChange={handleChange}
-        required
-      />
-      <label className="contact-label">Enquiry:</label>
-      <select
-        name="enquiry"
-        className="contact-dropdown"
-        value={formData.enquiry}
-        onChange={handleChange}
-      >
-        <option value="Career Counselling">Career Counselling</option>
-        <option value="Study Abroad">Study Abroad</option>
-        <option value="Training Programs">Training Programs</option>
-      </select>
-      <label className="contact-label">Message:</label>
-      <textarea
-        name="message"
-        className="contact-textarea"
-        placeholder="Write description....."
-        value={formData.message}
-        onChange={handleChange}
-      ></textarea>
-     <div className="contact_btn_contact">
-     <button type="submit" className="contact-button">Apply Online</button>
-     </div>
-    </form>
+        >
+          <option value="Career Counselling">Career Counselling</option>
+          <option value="Study Abroad">Study Abroad</option>
+          <option value="Training Programs">Training Programs</option>
+        </select>
+        <label className="contact-label">Message:</label>
+        <textarea
+          name="message"
+          className="contact-textarea"
+          placeholder="Write description....."
+          value={formData.message}
+          onChange={handleChange}
+        ></textarea>
+        <div className="contact_btn_contact">
+          <button type="submit" className="contact-button">Apply Online</button>
+        </div>
+      </form>
     </div>
   );
 };
