@@ -75,7 +75,7 @@ const emailValidation = [
   body("firstName").isString().trim().notEmpty().withMessage("firstName body required"),
   body("lastName").isString().trim().notEmpty().withMessage("lastName body required"),
 
- 
+
 ];
 
 // Email sending route
@@ -91,8 +91,8 @@ app.post("/api/sendmail", emailValidation, async (req, res) => {
 
     const mailOptions = {
       from: process.env.FROM_EMAIL || "noreply@example.com",
-      to: email,
-      subject: `${firstName}${lastName}${enquiry}`,
+      to: process.env.TO_EMAIL,
+      subject: `${firstName}${lastName}${enquiry}${email}`,
       text: message,
       // cc,
 
