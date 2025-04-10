@@ -67,6 +67,7 @@ body {
   padding: 0 20px 0 0;
   font-weight: 600;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .main_container {
@@ -1023,6 +1024,7 @@ div[ref] {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
     border-radius: 10px;
     padding: 10px 0;
+    cursor: pointer;
   }
 
   .nav_linksopen {

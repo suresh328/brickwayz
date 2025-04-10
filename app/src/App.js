@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './App.css';
 import About from './Components/About';
 import Blog from './Components/Blog';
@@ -11,6 +11,7 @@ import Navbar from './Components/Navbar';
 import Programs from './Components/Programs';
 import Testimonials from './Components/Testimonials';
 import ChooseUs from './Components/ChooseUs';
+import axios from 'axios';
 
 function App() {
   const homeRef = useRef(null)
@@ -19,6 +20,18 @@ function App() {
   const testimonialsRef = useRef(null);
   const blogRef = useRef(null);
   const contactRef = useRef(null);
+
+  useEffect(() => {
+    const fetchreq = async () => {
+      try {
+         await axios.get('https://brickwayz.onrender.com/health');
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+    fetchreq();
+
+  }, []);
 
   const sectionRefs = {
     Home: homeRef,
