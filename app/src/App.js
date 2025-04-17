@@ -12,6 +12,7 @@ import Programs from './Components/Programs';
 import Testimonials from './Components/Testimonials';
 import ChooseUs from './Components/ChooseUs';
 import axios from 'axios';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const homeRef = useRef(null)
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <>
+      <BrowserRouter>
       <div>
         <Navbar sectionRefs={sectionRefs} />
 
@@ -58,6 +60,7 @@ function App() {
         <div ref={contactRef}><Contact /></div>
         <Footer />
       </div>
+      </BrowserRouter>
     </>
   );
 }

@@ -9,19 +9,19 @@ const Blog = () => {
 
   const posts = [
     {
-      sub:"Study Abroad",
+      sub:"Abroad",
       title: "Reflect on your experience:",
       excerpt: "Identify situations experienced abroad to support your claims of skills qualities. Develop short 'stories' to demonstrate your skills in interviews. Understand the importance of preparing for job interviews.",
       image: blog1,
     },
     {
-      sub:"Study Consultancy",
+      sub:"Consultancy",
       title: "Offer Value-Added Services:",
       excerpt: "Before venturing into the study abroad business, focus on knowledge about higher education for Indian students aspiring to study abroad. Understand the application process, university requirements, and visa regulations to guide students effectively.",
       image: blog2,
     },
     {
-      sub:"Study Abroad",
+      sub:"Abroad",
       title: "Which Field Is Demand In Abroad :",
       excerpt: "Artificial Intelligence (AI) and Machine Learning, Data Science, Cybersecurity, Computer Science & IT, Business & Management, Engineering, and Healthcare & Medicine are some of the top courses in demand for studying abroad in 2025.",
       image: blog3,

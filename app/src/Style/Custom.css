@@ -295,7 +295,6 @@ body {
 }
 .programe_para {
   font-size: 20px;
-  letter-spacing: 1px;
 }
 .programe_offer {
   font-size: 28px;
@@ -307,13 +306,11 @@ body {
   font-size: 22px;
   color: #5f6161;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 .prog_list strong {
   color: #070707;
   font-size: 24px;
-  letter-spacing: 1px;
 }
 
 .program_linkbtn {
@@ -325,6 +322,7 @@ body {
   border-radius: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 .program_linkbtn:hover {
   background-color: #14999c;
@@ -372,7 +370,6 @@ body {
 
 .studyabroad_bullet-list li {
   margin-bottom: 10px;
-  letter-spacing: 1px;
   font-size: 20px;
   color: #5f6161;
 }
@@ -843,7 +840,6 @@ div[ref] {
 .footer-info {
   line-height: 1.5;
   margin-bottom: 8px;
-  letter-spacing: 1px;
 }
 .footer-info strong {
   color: #8de7e9;
@@ -904,7 +900,6 @@ div[ref] {
   line-height: 1.6;
   text-align: left;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 /* Feature Section */
@@ -989,7 +984,48 @@ div[ref] {
 /* =============== */
 /*  choose us */
 /* =============== */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
+  .image_content {
+    height: 450px;
+    width: 483px;
+  }
+  .hero h2 {
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: start;
+  }
+  .hero p {
+    color: #8de7e9;
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-bottom: 2rem;
+  }
+  .aboutrect_image {
+    height: 295px;
+    margin: 85px 10px;
+    position: relative;
+    width: 270px;
+  }
+  .content {
+    width: 430px;
+  }
+  .programe_para {
+    font-size: 18px;
+  }
+  .prog_list {
+    color: #5f6161;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .chooseus__text {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -1003,7 +1039,7 @@ div[ref] {
   .blog-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 21px;
     margin-bottom: 30px;
   }
   .hamburger {
@@ -1193,7 +1229,6 @@ div[ref] {
   }
   .programe_para {
     font-size: 13px;
-    letter-spacing: 1px;
   }
   .programe_offer {
     font-size: 24px;
@@ -1294,6 +1329,16 @@ div[ref] {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .study-abroad-section,
+  .program {
+    text-align: center;
+  }
+  .study-abroad-section ul {
+    text-align: center;
+  }
+  .study-abroad-section p {
+    text-align: center;
   }
 }
 
@@ -1500,7 +1545,6 @@ div[ref] {
   }
   .programe_para {
     font-size: 13px;
-    letter-spacing: 1px;
   }
   .programe_offer {
     font-size: 24px;
@@ -1514,7 +1558,7 @@ div[ref] {
   .program_linkbtn {
     padding: 13px 60px;
     margin: 0px 10px;
-}
+  }
   .studyabroad_title {
     font-size: 24px;
     margin-bottom: 10px;
@@ -1596,7 +1640,7 @@ div[ref] {
     width: 100%;
     margin: 10px auto 30px auto;
     padding: 20px 16px;
-}
+  }
   .contact-input-group {
     display: flex;
     flex-direction: column;
@@ -1651,6 +1695,19 @@ div[ref] {
     color: #1f7476;
     text-align: center;
   }
+  .chooseus__text {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .chooseus__diamond {
+    width: 150px;
+    height: 150px;
+   
+  }
 }
 
 .scrollup_btn {
@@ -1679,6 +1736,14 @@ div[ref] {
   text-align: center;
 }
 
+@media screen and (max-width: 980px) {
+  .di_fele {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   .chooseus__text strong {
     margin-bottom: 10px;
