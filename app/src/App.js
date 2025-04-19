@@ -55,8 +55,8 @@ function App() {
         <Countries />
         <ChooseUs />
         <div ref={testimonialsRef}><Testimonials /></div>
-        <FAQ />
         <div ref={blogRef}><Blog /></div>
+        <FAQ />
         <div ref={contactRef}><Contact /></div>
         <Footer />
       </div>
