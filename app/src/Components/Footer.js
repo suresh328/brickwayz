@@ -30,7 +30,7 @@ function Footer() {
           <a href="https://facebook.com" className="footer-icon-link">
             <FaFacebookF />
           </a>
-          <a href="https://wa.me/7339077299" className="footer-icon-link">
+          <a href="https://wa.me/7339007299" className="footer-icon-link">
             <FaWhatsapp />
           </a>
           <a href="https://instagram.com" className="footer-icon-link">
@@ -43,7 +43,7 @@ function Footer() {
           <strong>Email:</strong> brickwayz.academy@gmail.com
         </p>
         <p className="footer-info">
-          <strong>Phone:</strong> 7339077299
+          <strong>Phone:</strong> 7339007299
         </p>
         <p className="footer-info">
           <strong>Location:</strong> A1A, TNHB, 5876, Avadi Road, TNHB Colony, Annanur, 
