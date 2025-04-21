@@ -584,7 +584,7 @@ body {
 /* ---------------------- */
 
 .blog {
-  padding: 60px 20px;
+  padding: 20px;
   text-align: center;
 }
 .blog_tittle {
@@ -891,7 +891,7 @@ div[ref] {
 .chooseus__section {
   padding: 20px 0;
   border-radius: 8px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .chooseus__text {
@@ -1437,8 +1437,8 @@ div[ref] {
     text-align: center;
   }
   .study-abroad-section p {
-    text-align: center;
-  }
+    text-align: start;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1580,18 +1580,18 @@ div[ref] {
   }
 
   .image_content {
-    width: 260px;
-    height: 260px;
-    margin-top: 80px;
-  }
+    width: 320px;
+    height: 350px;
+    margin-top: 9px;
+}
 
-  .hero h2 {
-    font-size: 14px;
-    text-align: start;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    line-height: 20px;
-  }
+.hero h2 {
+  font-size: 18px;
+  text-align: start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 28px;
+}
   .hero h2 span {
     background: #fff;
     color: rgba(0, 128, 128, 0.9);
@@ -1603,12 +1603,12 @@ div[ref] {
     width: 95%;
   }
   .hero p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 1.2rem;
     text-align: start;
     color: #8de7e9;
-    line-height: 18px;
-  }
+    line-height: 22px;
+}
   .hero .btn {
     padding: 6px 20px;
     font-size: 13px;
@@ -1653,7 +1653,8 @@ div[ref] {
   }
   .prog_list {
     font-size: 12px;
-  }
+    text-align: start;
+}
   .program_linkbtn {
     padding: 8px 29px;
     margin: 0px 10px;
@@ -1663,10 +1664,12 @@ div[ref] {
     margin-bottom: 10px;
   }
   .studyabroad_bullet-list li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-size: 12px;
     color: #5f6161;
-  }
+    text-align: start;
+    margin: 0 6px;
+}
   .studyabroad_bullet-list li strong {
     margin-bottom: 10px;
     font-size: 18px;
