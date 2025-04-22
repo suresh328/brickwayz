@@ -5,13 +5,19 @@ import study_about from "./../Assets/study_about.png"
 import study_girl from "./../Assets/study_girls.png"
 import "./../Style/Custom.css"
 
+
+import icon1 from "./../Assets/icons/bulb.png"
+import icon2 from "./../Assets/icons/manager.png"
+import icon3 from "./../Assets/icons/call.png"
 const About = () => {
   return (
     <>
       <div className="main_container">
         <div className="supports">
           <div className="support_card">
-            <div className="icon">💡</div>
+            <div className="icon">
+              <img src={icon1} />
+            </div>
             <h3 className='support_head'>One Stop Study Solution</h3>
             <p className='support_para'>
               Studying abroad can be challenging, but we make it simple. Our
@@ -22,7 +28,9 @@ const About = () => {
           </div>
 
           <div className="support_card">
-            <div className="icon">👔</div>
+            <div className="icon">
+            <img src={icon2} />
+            </div>
             <h3 className='support_head'>Personalized Guidance</h3>
             <p className='support_para'>
               We understand that every student's journey is unique. Our counselors
@@ -33,7 +41,9 @@ const About = () => {
           </div>
 
           <div className="support_card">
-            <div className="icon">📞</div>
+            <div className="icon">
+            <img src={icon3} />
+            </div>
             <h3 className='support_head'>End-to-End Support</h3>
             <p className='support_para'>
               From the initial consultation to your arrival on campus, our
