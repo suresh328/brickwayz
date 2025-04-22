@@ -169,6 +169,7 @@ const Contact = () => {
           <button type="submit" className="contact-button">Apply Online</button>
         </div>
       </form>
+      <p className="tanking_you">THANK YOU! OUR TEAM WILL CONNECT WITH YOU SOON. HAPPY LEARNING!</p>
     </div>
   );
 };

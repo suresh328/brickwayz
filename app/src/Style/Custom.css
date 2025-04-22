@@ -1,5 +1,5 @@
 /* Global Reset and Base */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -200,13 +200,13 @@ body {
 }
 
 .support_card .icon {
- width: 80px;
- height: 80px;
- margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
 }
-.support_card .icon img{
- width: 100%;
- height: 100%;
+.support_card .icon img {
+  width: 100%;
+  height: 100%;
 }
 
 .support_head {
@@ -214,7 +214,6 @@ body {
   font-weight: bold;
   text-align: start;
   font-family: "Montserrat";
-
 }
 
 .support_para {
@@ -271,7 +270,6 @@ body {
   font-weight: 500;
   color: #5f6161;
   font-family: "Montserrat";
-
 }
 .content p span {
   font-size: 20px;
@@ -321,12 +319,10 @@ body {
   font-size: 30px;
   color: #106466;
   font-family: "Montserrat";
-
 }
 .programe_para {
   font-size: 20px;
   font-family: "Montserrat";
-  
 }
 .programe_offer {
   font-size: 28px;
@@ -339,7 +335,6 @@ body {
   color: #5f6161;
   margin-bottom: 10px;
   font-family: "Montserrat";
-
 }
 
 .prog_list strong {
@@ -440,6 +435,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .country-card:hover {
   transform: scale(1.06);
@@ -505,6 +505,10 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .explore_card:hover {
   transform: scale(1.06);
@@ -584,7 +588,6 @@ body {
   margin-bottom: 10px;
   color: #444;
   font-family: "Montserrat";
-
 }
 
 .image-wrapper {
@@ -613,7 +616,6 @@ body {
   margin: 0 auto;
   font-family: "Montserrat";
   text-align: start;
-
 }
 
 .testimonial-author {
@@ -669,7 +671,6 @@ body {
 }
 .blog_subtitles {
   font-family: "Montserrat";
-
 }
 .contentss {
 }
@@ -677,13 +678,11 @@ body {
   font-size: 15px;
   text-align: start;
   font-family: "Montserrat";
-
 }
 .blog_parass {
   font-size: 14px;
   text-align: start;
   font-family: "Montserrat";
-
 }
 
 @media (max-width: 768px) {
@@ -699,6 +698,7 @@ body {
 .faq-section {
   width: 85%;
   margin: 0 auto;
+  font-family: "Montserrat";
 }
 .faq-title {
   font-size: 32px;
@@ -734,7 +734,6 @@ body {
   color: #000000;
   width: 80%;
   font-family: "Montserrat";
-
 }
 .faq-answer {
   font-size: 16px;
@@ -751,7 +750,6 @@ body {
   text-align: center;
   margin: 0 auto;
   font-family: "Montserrat";
-
 }
 
 .form-text {
@@ -761,8 +759,15 @@ body {
   margin: 20px auto 20px auto;
   text-align: center;
   font-family: "Montserrat";
-
 }
+
+.tanking_you {
+  font-size: 18px;
+  color: #1F7476;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
 
 /* ================== */
 /*     contact        */
@@ -796,7 +801,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: "Montserrat";
-
 }
 
 .contact-dropdown,
@@ -895,8 +899,10 @@ div[ref] {
 }
 
 .footer-info {
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 8px;
+  font-family: "Montserrat";
 }
 .footer-info strong {
   color: #8de7e9;
@@ -922,7 +928,6 @@ div[ref] {
   margin: 0 auto;
   color: #004d40;
   font-family: "Montserrat";
-
 }
 
 /* =============== */
@@ -1056,8 +1061,8 @@ div[ref] {
     margin-bottom: 20px;
     margin-top: 80px;
     text-align: start;
-    font-family: "Montserrat" ,sans-serif;
-}
+    font-family: "Montserrat", sans-serif;
+  }
   .hero p {
     color: #8de7e9;
     font-size: 1.2rem;
@@ -1072,7 +1077,7 @@ div[ref] {
   }
   .content {
     width: 50%;
-}
+  }
   .programe_para {
     font-size: 18px;
   }
@@ -1090,7 +1095,12 @@ div[ref] {
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1281px) {
+  .about {
+    padding: 35px 20px;
+    width: 92%;
+    margin: 0 auto;
+}
   .blog-card {
     border: 1px solid #000;
     width: 320px;
@@ -1101,30 +1111,31 @@ div[ref] {
     margin: 0 auto;
   }
   .image_content {
-        height: 45%;
-        width: 45%;
-    }
+    height: 45%;
+    width: 45%;
+  }
   .image_content .py_text {
     width: 50%;
     height: 40%;
     position: absolute;
     left: 0%;
     top: -0;
-}
-.image_content .py_text4 {
-  width: 25%;
+  }
+  .image_content .py_text4 {
+    width: 25%;
     height: 25%;
     position: absolute;
     left: 46%;
     top: 49%;
+  }
+  .hero h2 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: start;
+    font-family: "Montserrat", sans-serif;
 }
-     .hero h2 {
-        font-size: 32px;
-        line-height: 42px;
-        margin-bottom: 20px;
-        margin-top: 80px;
-        text-align: start;
-    }
   .hero p {
     color: #8de7e9;
     font-size: 1rem;
@@ -1173,10 +1184,18 @@ div[ref] {
     width: 100%;
     height: 185px;
   }
-  .footer-right,
+
   .footer-left {
     text-align: center;
   }
+  .footer-right {
+    text-align: start;
+  }
+  .footer-info {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
   .footerlog0 {
     width: 150px;
     height: 150px;
@@ -1189,9 +1208,23 @@ div[ref] {
     font-size: 18px;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
   }
+  .di_fele {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+.hero p {
+  color: #8de7e9;
+  font-size: 19px;
+  line-height: 26px;
+  margin-bottom: 2rem;
+  font-family: "Montserrat";
+}
 }
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -1516,7 +1549,7 @@ div[ref] {
   }
   .study-abroad-section p {
     text-align: start;
-}
+  }
 }
 @media screen and (max-width: 980px) {
   .di_fele {
@@ -1525,6 +1558,64 @@ div[ref] {
     justify-content: space-between;
     width: 90%;
   }
+}
+
+@media screen and (max-width: 821px) {
+  .image_content {
+    width: 85%;
+    height: 50%;
+}
+.hero h2 {
+  font-size: 35px;
+  text-align: start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 46px;
+  font-family: "Montserrat";
+}
+.hero h2 span {
+  background: #fff;
+  color: rgba(0, 128, 128, 0.9);
+  padding: 1px 5px 1px 5px;
+  border-radius: 20px;
+  font-size: 30px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+  text-align: start;
+  color: #8de7e9;
+  line-height: 28px;
+}
+.hero .btn {
+  padding: 14px 24px;
+  font-size: 18px;
+  border-radius: 25px;
+}
+.aboutrect_image {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin: 0px auto;
+}
+img.img1 {
+  width: 100%;
+  height: 100%;
+}
+.img2 {
+  position: absolute;
+  top: -25px;
+  left: -45px;
+  width: 85%;
+  height: 85%;
+}
+.img3 {
+  position: absolute;
+  top: 90px;
+  left: 95px;
+  width: 80%;
+}
+
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -1541,7 +1632,12 @@ div[ref] {
     color: #000000;
     width: 100%;
     font-size: 16px;
-  }
+    font-weight: 600;
+}
+.faq-section {
+  width: 94%;
+  margin: 0 auto;
+}
   .hamburger {
     display: block;
     position: absolute;
@@ -1654,7 +1750,7 @@ div[ref] {
     top: 90px;
     left: 95px;
     width: 170px;
-}
+  }
   .content {
     width: 95%;
   }
@@ -1668,15 +1764,15 @@ div[ref] {
     width: 320px;
     height: 350px;
     margin-top: 9px;
-}
+  }
 
-.hero h2 {
-  font-size: 18px;
-  text-align: start;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  line-height: 28px;
-}
+  .hero h2 {
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 28px;
+  }
   .hero h2 span {
     background: #fff;
     color: rgba(0, 128, 128, 0.9);
@@ -1693,7 +1789,7 @@ div[ref] {
     text-align: start;
     color: #8de7e9;
     line-height: 22px;
-}
+  }
   .hero .btn {
     padding: 6px 20px;
     font-size: 13px;
@@ -1726,35 +1822,39 @@ div[ref] {
   .program_header {
     font-size: 24px;
     color: #106466;
-  }
+    text-align: start;
+}
   .programe_para {
     font-size: 13px;
   }
-  .programe_offer {
-    font-size: 24px;
-  }
+  .programe_para {
+    font-size: 13px;
+    text-align: start;
+}
   .prog_list strong {
     font-size: 16px;
   }
   .prog_list {
     font-size: 12px;
     text-align: start;
-}
+  }
   .program_linkbtn {
     padding: 8px 29px;
     margin: 0px 10px;
   }
   .studyabroad_title {
     font-size: 24px;
-    margin-bottom: 10px;
-  }
+    /* margin-bottom: 10px; */
+    text-align: start;
+    margin: 25px 6px 10px 6px;
+}
   .studyabroad_bullet-list li {
     /* margin-bottom: 10px; */
     font-size: 12px;
     color: #5f6161;
     text-align: start;
     margin: 0 6px;
-}
+  }
   .studyabroad_bullet-list li strong {
     margin-bottom: 10px;
     font-size: 18px;
@@ -1795,7 +1895,9 @@ div[ref] {
   }
   .testimonial-quote {
     font-size: 10px;
-  }
+    text-align: justify;
+}
+
   .testimonial-author {
     font-size: 12px;
   }
@@ -1909,8 +2011,9 @@ div[ref] {
     color: #006666;
     margin-bottom: 0px;
     font-weight: bold;
-    margin-top: 60px;
-  }
+    margin-top: 25px;
+    text-align: start;
+}
   .contact-text {
     font-size: 14px;
     color: #1f7476;
@@ -1932,6 +2035,24 @@ div[ref] {
     text-align: center;
     padding: 40px 20px;
   }
+  .faq-answer {
+    font-size: 16px;
+    color: #5f6161;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0px;
+}
+.tanking_you{
+  font-size: 10px;
+  color: #1F7476;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.footer-info {
+  line-height: 1.5;
+  margin-bottom: 8px;
+  text-align: start;
+}
 }
 
 .scrollup_btn {
@@ -1959,8 +2080,4 @@ div[ref] {
   margin-bottom: 30px;
   text-align: center;
   font-family: "Montserrat";
-
 }
-
-
-
