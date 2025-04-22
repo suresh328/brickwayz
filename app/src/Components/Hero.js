@@ -3,6 +3,9 @@ import React from 'react'
 import "./../Style/Custom.css"
 import { FaArrowCircleUp } from "react-icons/fa";
 import girl from "./../Assets/girlimg.png"
+import py from "./../Assets/chooseusicon/image 27.png"
+import py12 from "./../Assets/app_logo.png"
+
 
 const Hero = () => {
   return (
@@ -30,6 +33,9 @@ const Hero = () => {
             </div>
             <div className='image_content'>
               <img src={girl} />
+              <img src={py} className='py_text'/>
+              <img src={py12} className='py_text4'/>
+
             </div>
           </div>
         </div>
