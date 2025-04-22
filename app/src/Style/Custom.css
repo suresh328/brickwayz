@@ -1156,7 +1156,7 @@ div[ref] {
     width: 220px;
   }
   img.img1 {
-    width: 275px;
+    width: 230px;
   }
   .content p {
     font-size: 17px;
@@ -1518,7 +1518,14 @@ div[ref] {
     text-align: start;
 }
 }
-
+@media screen and (max-width: 980px) {
+  .di_fele {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   .navbar {
     position: absolute;
@@ -1887,45 +1894,6 @@ div[ref] {
     width: 150px;
     height: 150px;
   }
-}
-
-.scrollup_btn {
-  position: fixed;
-  bottom: 30px;
-  right: 25px;
-  width: 35px;
-  height: 33px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  z-index: 11111;
-  background: #c7f8f8;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-/* new changes */
-
-.All_Heading {
-  font-size: 24px;
-  color: #1f7476;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: "Montserrat";
-
-}
-
-@media screen and (max-width: 980px) {
-  .di_fele {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-  }
-}
-@media screen and (max-width: 768px) {
   .chooseus__text strong {
     margin-bottom: 10px;
     font-size: 18px;
@@ -1965,3 +1933,34 @@ div[ref] {
     padding: 40px 20px;
   }
 }
+
+.scrollup_btn {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 35px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 11111;
+  background: #c7f8f8;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* new changes */
+
+.All_Heading {
+  font-size: 24px;
+  color: #1f7476;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Montserrat";
+
+}
+
+
+
