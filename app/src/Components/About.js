@@ -74,6 +74,9 @@ const About = () => {
               <p>
                <span> Brickwayz Academy</span> is a leading educational consultancy dedicated to turning dreams into reality. Our team of experienced professionals provides personalized guidance to help students navigate their educational journeys. We assist with choosing the right career path, securing admission to prestigious international universities, and acquiring in-demand skills through our training programs.
               </p>
+              <div className='core strength'>
+
+              </div>
             </div>
           </div>
         </section>

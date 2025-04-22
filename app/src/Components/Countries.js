@@ -50,12 +50,17 @@ const Countries = () => {
     { name: 'Humanities', img: explor12 },
     { name: 'Environmental Studies', img: explor13 }
   ];
-  
+
 
   return (
     <div className='main_container'>
       <section className="study-abroad-section">
+        <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
+            Learn more
+          </Link>
 
+        </div>
         {/* Section Title */}
         <h2 className="studyabroad_title">Study Abroad</h2>
 
@@ -66,17 +71,10 @@ const Countries = () => {
           <li><strong>Scholarship Counselling:</strong> Assisting you in searching and applying for funding opportunities.</li>
           <li><strong>Visa Assistance:</strong> Detailed support to guide you through the visa application process.</li>
         </ul>
-       
 
 
-        <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
-            Apply Online
-          </Link>
-          {/* <button className='program_linkbtn' onClick={() => window.scrollTo({ top: document.getElementById('Contact').offsetTop, behavior: 'smooth' })}>
-            Apply Online
-          </button> */}
-        </div>
+
+
         {/* Subtitle */}
         <p className="subtitle">Our global network includes top universities in:</p>
 
@@ -98,8 +96,8 @@ const Countries = () => {
 
         {/* Button */}
         <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
-            Apply Online
+          <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
+            Apply online
           </Link>
         </div>
 
@@ -122,6 +120,11 @@ const Countries = () => {
                 <p className="explore_name">{country.name}</p>
               </div>
             ))}
+          </div>
+          <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
+              Learn more
+            </Link>
           </div>
         </section>
 

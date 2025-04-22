@@ -83,11 +83,9 @@ const Testimonials = () => {
 
           {/* First Quote */}
           <p className="testimonial-quote">{quote1}</p>
-          <p className="testimonial-author">{author1}</p>
 
           {/* Second Quote */}
           <p className="testimonial-quote">{quote2}</p>
-          <p className="testimonial-author">{author2}</p>
         </div>
 
         {/* Right Arrow */}
