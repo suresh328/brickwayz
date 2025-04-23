@@ -763,11 +763,10 @@ body {
 
 .tanking_you {
   font-size: 18px;
-  color: #1F7476;
+  color: #1f7476;
   font-family: "Montserrat";
   text-align: center;
 }
-
 
 /* ================== */
 /*     contact        */
@@ -903,7 +902,6 @@ div[ref] {
   line-height: 1.5;
   margin-bottom: 8px;
   font-family: "Montserrat";
-  
 }
 .footer-info strong {
   color: #8de7e9;
@@ -1051,7 +1049,7 @@ div[ref] {
 /* =============== */
 /*  choose us */
 /* =============== */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .image_content {
     height: 450px;
     width: 483px;
@@ -1101,7 +1099,7 @@ div[ref] {
     padding: 35px 20px;
     width: 92%;
     margin: 0 auto;
-}
+  }
   .blog-card {
     border: 1px solid #000;
     width: 320px;
@@ -1112,8 +1110,8 @@ div[ref] {
     margin: 0 auto;
   }
   .image_content {
-    height: 45%;
-    width: 45%;
+    height: 450px;
+    width: 483px;
   }
   .image_content .py_text {
     width: 50%;
@@ -1130,13 +1128,13 @@ div[ref] {
     top: 49%;
   }
   .hero h2 {
-    font-size: 32px;
-    line-height: 46px;
+    font-size: 25px;
+    line-height: 34px;
     margin-bottom: 20px;
     margin-top: 80px;
     text-align: start;
     font-family: "Montserrat", sans-serif;
-}
+  }
   .hero p {
     color: #8de7e9;
     font-size: 1rem;
@@ -1196,7 +1194,7 @@ div[ref] {
     font-size: 21px;
     line-height: 1.5;
     margin-bottom: 8px;
-}
+  }
   .footerlog0 {
     width: 150px;
     height: 150px;
@@ -1213,19 +1211,18 @@ div[ref] {
     justify-content: start;
   }
   .di_fele {
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 65%;
-}
-.hero p {
-  color: #8de7e9;
-  font-size: 19px;
-  line-height: 26px;
-  margin-bottom: 2rem;
-  font-family: "Montserrat";
-}
+  }
+  .hero p {
+    color: #8de7e9;
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 2rem;
+    font-family: "Montserrat";
+  }
 }
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -1287,9 +1284,9 @@ div[ref] {
     gap: 20px;
     max-width: 100%;
     padding: 10px 10px 0 10px;
-    margin-top: 0px;
+    margin-top: -40px;
     z-index: 3000;
-    flex-direction: column;
+    flex-direction: row;
   }
   .blog-grid {
     flex-direction: column;
@@ -1319,7 +1316,7 @@ div[ref] {
   }
   .about_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .content p {
     font-size: 19px;
@@ -1328,9 +1325,11 @@ div[ref] {
   }
 
   .hero_container {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
-
+  .hero_content {
+    width: 50%;
+  }
   .aboutrect_image {
     width: 259px;
     height: 241px;
@@ -1366,16 +1365,20 @@ div[ref] {
   }
 
   .image_content {
-    width: 400px;
-    height: 400px;
+    width: 310px;
+    height: 340px;
   }
+  .hero {
+    height: 90vh;
 
+    padding: 0 1rem;
+  }
   .hero h2 {
-    font-size: 14px;
+    font-size: 20px;
     text-align: start;
     margin-bottom: 10px;
-    margin-top: 10px;
-    line-height: 20px;
+    margin-top: 40px;
+    line-height: 26px;
     font-family: "Montserrat";
   }
   .hero h2 span {
@@ -1389,7 +1392,7 @@ div[ref] {
     width: 95%;
   }
   .hero p {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 1.2rem;
     text-align: start;
     color: #8de7e9;
@@ -1406,11 +1409,11 @@ div[ref] {
     text-align: start;
   }
   .support_para {
-    font-size: 12.5px;
+    font-size: 11.5px;
     color: #666;
     margin-top: 5px;
     text-align: start;
-  }
+}
   .about_header {
     padding: 3px 10px;
     color: #106466;
@@ -1441,8 +1444,8 @@ div[ref] {
     font-size: 12px;
   }
   .program_linkbtn {
-    padding: 8px 60px;
-    margin: 30px 10px;
+    padding: 8px 20px;
+    margin: 15px 10px;
   }
   .studyabroad_title {
     font-size: 24px;
@@ -1514,17 +1517,34 @@ div[ref] {
   }
   .blog_card_image {
     width: 100%;
-    height: 185px;
-  }
+    height: 145px;
+}
+.blog_parass {
+  font-size: 11px;
+  text-align: start;
+  font-family: "Montserrat";
+}
+.blog_titles {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: start;
+  font-family: "Montserrat";
+}
+.question-text {
+  color: #000000;
+  width: 80%;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
   .ceraer {
     width: 100%;
     font-size: 12px;
   }
   .contact-form {
-    width: 100%;
+    width: 70%;
     margin: auto;
     padding: 20px 16px;
-  }
+}
   .contact-input-group {
     display: flex;
     flex-direction: column;
@@ -1543,14 +1563,27 @@ div[ref] {
   }
   .study-abroad-section,
   .program {
-    text-align: center;
+    text-align: start;
   }
   .study-abroad-section ul {
-    text-align: center;
+    text-align: start;
   }
   .study-abroad-section p {
     text-align: start;
   }
+  .blog-grid {
+    flex-direction: row;
+}
+  .blog-card {
+    border: 1px solid #000;
+    width: 275px;
+    display: flex
+;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
 }
 @media screen and (max-width: 980px) {
   .di_fele {
@@ -1565,58 +1598,57 @@ div[ref] {
   .image_content {
     width: 85%;
     height: 50%;
-}
-.hero h2 {
-  font-size: 35px;
-  text-align: start;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  line-height: 46px;
-  font-family: "Montserrat";
-}
-.hero h2 span {
-  background: #fff;
-  color: rgba(0, 128, 128, 0.9);
-  padding: 1px 5px 1px 5px;
-  border-radius: 20px;
-  font-size: 30px;
-}
-.hero p {
-  font-size: 20px;
-  margin-bottom: 1.2rem;
-  text-align: start;
-  color: #8de7e9;
-  line-height: 28px;
-}
-.hero .btn {
-  padding: 14px 24px;
-  font-size: 18px;
-  border-radius: 25px;
-}
-.aboutrect_image {
-  width: 50%;
-  height: 50%;
-  position: relative;
-  margin: 0px auto;
-}
-img.img1 {
-  width: 100%;
-  height: 100%;
-}
-.img2 {
-  position: absolute;
-  top: -25px;
-  left: -45px;
-  width: 85%;
-  height: 85%;
-}
-.img3 {
-  position: absolute;
-  top: 90px;
-  left: 95px;
-  width: 80%;
-}
-
+  }
+  .hero h2 {
+    font-size: 35px;
+    text-align: start;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 46px;
+    font-family: "Montserrat";
+  }
+  .hero h2 span {
+    background: #fff;
+    color: rgba(0, 128, 128, 0.9);
+    padding: 1px 5px 1px 5px;
+    border-radius: 20px;
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+    text-align: start;
+    color: #8de7e9;
+    line-height: 28px;
+  }
+  .hero .btn {
+    padding: 14px 24px;
+    font-size: 18px;
+    border-radius: 25px;
+  }
+  .aboutrect_image {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 0px auto;
+  }
+  img.img1 {
+    width: 100%;
+    height: 100%;
+  }
+  .img2 {
+    position: absolute;
+    top: -25px;
+    left: -45px;
+    width: 85%;
+    height: 85%;
+  }
+  .img3 {
+    position: absolute;
+    top: 90px;
+    left: 95px;
+    width: 80%;
+  }
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -1634,11 +1666,11 @@ img.img1 {
     width: 100%;
     font-size: 16px;
     font-weight: 600;
-}
-.faq-section {
-  width: 94%;
-  margin: 0 auto;
-}
+  }
+  .faq-section {
+    width: 94%;
+    margin: 0 auto;
+  }
   .hamburger {
     display: block;
     position: absolute;
@@ -1824,14 +1856,14 @@ img.img1 {
     font-size: 24px;
     color: #106466;
     text-align: start;
-}
+  }
   .programe_para {
     font-size: 13px;
   }
   .programe_para {
     font-size: 13px;
     text-align: start;
-}
+  }
   .prog_list strong {
     font-size: 16px;
   }
@@ -1848,7 +1880,7 @@ img.img1 {
     /* margin-bottom: 10px; */
     text-align: start;
     margin: 25px 6px 10px 6px;
-}
+  }
   .studyabroad_bullet-list li {
     /* margin-bottom: 10px; */
     font-size: 12px;
@@ -1897,7 +1929,7 @@ img.img1 {
   .testimonial-quote {
     font-size: 10px;
     text-align: justify;
-}
+  }
 
   .testimonial-author {
     font-size: 12px;
@@ -2014,7 +2046,7 @@ img.img1 {
     font-weight: bold;
     margin-top: 25px;
     text-align: start;
-}
+  }
   .contact-text {
     font-size: 14px;
     color: #1f7476;
@@ -2042,18 +2074,18 @@ img.img1 {
     margin-top: 20px;
     width: 100%;
     margin-left: 0px;
-}
-.tanking_you{
-  font-size: 10px;
-  color: #1F7476;
-  font-family: "Montserrat";
-  text-align: center;
-}
-.footer-info {
-  line-height: 1.5;
-  margin-bottom: 8px;
-  text-align: start;
-}
+  }
+  .tanking_you {
+    font-size: 10px;
+    color: #1f7476;
+    font-family: "Montserrat";
+    text-align: center;
+  }
+  .footer-info {
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: start;
+  }
 }
 
 .scrollup_btn {
