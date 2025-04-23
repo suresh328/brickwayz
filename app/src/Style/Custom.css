@@ -266,17 +266,86 @@ body {
   width: 600px;
 }
 .content p {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
   color: #5f6161;
   font-family: "Montserrat";
 }
 .content p span {
-  font-size: 20px;
+  font-size: 18px;
   color: #106466;
   font-weight: 600;
 }
+.corestrength{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.yeartitle {
+  letter-spacing: 0.3em;
+  color: #888;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+.yearstats-container {
+  display: flex;
+  gap: 20px;
+}
+
+.yearcard {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-weight: 500;
+  width: 180px;
+}
+
+.yearcard.yearblue {
+  background: #dff4ff;
+  color: #40a9ff;
+  border-left: 8px solid #40a9ff;
+  border-right: 8px solid #40a9ff;
+}
+
+.yearcard.yearyellow {
+  background: #fff6d1;
+  color:  #ffd54f;
+  border-left: 8px solid #ffd54f;
+  border-right: 8px solid #ffd54f;
+}
+
+.yearcard.yeargreen {
+  background: #c8fff9;
+  color:  #2a9d8f;
+  border-left: 8px solid #2a9d8f;
+  border-right: 8px solid #2a9d8f;
+}
+
+.yearcard .yearnumber {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.yearcard .bluelabel {
+  font-size: 12px;
+  color: #40a9ff;
+}
+.yearcard .yellowlabel {
+  font-size: 12px;
+  color: #ffd54f;
+}
+.yearcard .greenlabel {
+  font-size: 12px;
+  color: #2a9d8f;
+}
 /* ---------------------- */
 /*   Countries Section  */
 /* ---------------------- */
@@ -1595,6 +1664,11 @@ div[ref] {
     height: 60px;
     margin-bottom: 10px;
   }
+  .yearcard {
+    border-radius: 24px;
+    padding: 0px 15px;
+    width: 145px;
+}
 }
 @media screen and (max-width: 980px) {
   .di_fele {
@@ -1605,7 +1679,7 @@ div[ref] {
   }
 }
 
-@media screen and (max-width: 821px) {
+@media screen and (max-width: 854px) {
   .image_content {
     width: 85%;
     height: 50%;
@@ -1638,28 +1712,63 @@ div[ref] {
     border-radius: 25px;
   }
   .aboutrect_image {
-    width: 50%;
+    width: 60%;
     height: 50%;
     position: relative;
     margin: 0px auto;
-  }
+}
   img.img1 {
     width: 100%;
     height: 100%;
   }
   .img2 {
     position: absolute;
-    top: -25px;
-    left: -45px;
+    top: -22px;
+    left: -26px;
     width: 85%;
     height: 85%;
-  }
+}
   .img3 {
     position: absolute;
-    top: 90px;
-    left: 95px;
+    top: 60px;
+    left: 58px;
     width: 80%;
-  }
+}
+  .yearstats-container {
+    display: flex
+;
+    gap: 20px;
+    flex-direction: column;
+}
+.yearcard {
+  border-radius: 24px;
+  padding: 0px 5px;
+  width: 100px;
+}
+.yearstats-container {
+  display: flex
+;
+  gap: 20px;
+  flex-direction: row;
+  width: 100%;
+}
+.yearcard .bluelabel {
+  font-size: 9px;
+  color: #40a9ff;
+}
+.yearcard .yellowlabel {
+  font-size: 9px;
+  color: #ffd54f;
+}
+.yearcard .greenlabel {
+  font-size: 9px;
+  color: #2a9d8f;
+}
+.yearcard .yearnumber {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -2097,6 +2206,24 @@ div[ref] {
     margin-bottom: 8px;
     text-align: start;
   }
+  .yearstats-container {
+    display: flex
+;
+    gap: 20px;
+    flex-direction: column;
+}
+.yearcard {
+  border-radius: 24px;
+  padding: 0px 15px;
+  width: 100%;
+}
+.yearstats-container {
+  display: flex
+;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+}
 }
 
 .scrollup_btn {

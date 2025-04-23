@@ -29,7 +29,7 @@ const About = () => {
 
           <div className="support_card">
             <div className="icon">
-            <img src={icon2} />
+              <img src={icon2} />
             </div>
             <h3 className='support_head'>Personalized Guidance</h3>
             <p className='support_para'>
@@ -42,7 +42,7 @@ const About = () => {
 
           <div className="support_card">
             <div className="icon">
-            <img src={icon3} />
+              <img src={icon3} />
             </div>
             <h3 className='support_head'>End-to-End Support</h3>
             <p className='support_para'>
@@ -55,7 +55,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='main_container'  id='About'>
+      <div className='main_container' id='About'>
         <section className="about">
 
           <div className='All_Heading'>
@@ -65,22 +65,38 @@ const About = () => {
             <div className='image_section'>
               <div className="aboutrect_image">
                 <img src={aboutrec} alt="About Us" className='img1' />
-                <img src={study_about} className='img2'/>
+                <img src={study_about} className='img2' />
                 <img src={study_girl} className='img3' />
               </div>
             </div>
             <div className="content">
 
               <p>
-               <span> Brickwayz Academy</span> is a leading educational consultancy dedicated to turning dreams into reality. Our team of experienced professionals provides personalized guidance to help students navigate their educational journeys. We assist with choosing the right career path, securing admission to prestigious international universities, and acquiring in-demand skills through our training programs.
+                <span> Brickwayz Academy</span> is a leading educational consultancy dedicated to turning dreams into reality. Our team of experienced professionals provides personalized guidance to help students navigate their educational journeys. We assist with choosing the right career path, securing admission to prestigious international universities, and acquiring in-demand skills through our training programs.
               </p>
-              <div className='core strength'>
+              <div className='corestrength'> 
+                <h2 className='yeartitle'>CORE STRENGTH</h2>
+
+                <div class="yearstats-container">
+                  <div class="yearcard yearblue">
+                    <div class="yearnumber">3</div>
+                    <div class="yearlabel bluelabel">Years Experience</div>
+                  </div>
+                  <div class="yearcard yearyellow">
+                    <div class="yearnumber">230</div>
+                    <div class="yearlabel yellowlabel">Visa Approved</div>
+                  </div>
+                  <div class="yearcard yeargreen">
+                    <div class="yearnumber">98%</div>
+                    <div class="yearlabel greenlabel">Success</div>
+                  </div>
 
               </div>
             </div>
           </div>
-        </section>
       </div>
+    </section >
+      </div >
     </>
   )
 }
