@@ -62,7 +62,9 @@ const Contact = () => {
     enquiry: "Career Counselling",
     message: ""
   });
-  
+  const [thankYouMessageVisible, setThankYouMessageVisible] = useState(false);
+
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -81,6 +83,13 @@ const Contact = () => {
         confirmButtonText: "Okay"
       });
   
+      setThankYouMessageVisible(true);
+  
+      // Hide the thank you message after 5 seconds
+      setTimeout(() => {
+        setThankYouMessageVisible(false);
+      }, 5000);  // 5000 ms = 5 seconds
+
       // Reset the form
       setFormData({
         firstName: "",
@@ -169,7 +178,11 @@ const Contact = () => {
           <button type="submit" className="contact-button">Apply Online</button>
         </div>
       </form>
+
+      {thankYouMessageVisible && (
+
       <p className="tanking_you">THANK YOU! OUR TEAM WILL CONNECT WITH YOU SOON. HAPPY LEARNING!</p>
+      )}
     </div>
   );
 };

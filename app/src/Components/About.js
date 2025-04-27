@@ -77,18 +77,18 @@ const About = () => {
               <div className='corestrength'> 
                 <h2 className='yeartitle'>CORE STRENGTH</h2>
 
-                <div class="yearstats-container">
-                  <div class="yearcard yearblue">
-                    <div class="yearnumber">3</div>
-                    <div class="yearlabel bluelabel">Years Experience</div>
+                <div className="yearstats-container">
+                  <div className="yearcard yearblue">
+                    <div className="yearnumber">3</div>
+                    <div className="yearlabel bluelabel">Years Experience</div>
                   </div>
-                  <div class="yearcard yearyellow">
-                    <div class="yearnumber">230</div>
-                    <div class="yearlabel yellowlabel">Visa Approved</div>
+                  <div className="yearcard yearyellow">
+                    <div className="yearnumber">230</div>
+                    <div className="yearlabel yellowlabel">Visa Approved</div>
                   </div>
-                  <div class="yearcard yeargreen">
-                    <div class="yearnumber">98%</div>
-                    <div class="yearlabel greenlabel">Success</div>
+                  <div className="yearcard yeargreen">
+                    <div className="yearnumber">98%</div>
+                    <div className="yearlabel greenlabel">Success</div>
                   </div>
 
               </div>

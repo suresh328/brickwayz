@@ -454,12 +454,9 @@ body {
 }
 
 .studyabroad_title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #106466;
-  margin-top: 30px;
-  font-family: "Montserrat";
+  font-size: 30px;
+    color: #106466;
+    font-family: "Montserrat";
 }
 
 .studyabroad_bullet-list {
@@ -655,7 +652,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #444;
+  color: #106466;
   font-family: "Montserrat";
 }
 
@@ -685,6 +682,7 @@ body {
   margin: 0 auto;
   font-family: "Montserrat";
   text-align: start;
+  margin-bottom: 12px;
 }
 
 .testimonial-author {
@@ -705,11 +703,15 @@ body {
   color: #008080;
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  font-family: "Montserrat";
+
 }
 .blog_disc {
   color: #039e9e;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  font-family: "Montserrat";
+
 }
 .blog-grid {
   display: flex;
@@ -937,6 +939,8 @@ div[ref] {
 
 .footer-text {
   line-height: 1.6;
+  font-family: "Montserrat";
+
 }
 
 .footer-social-icons {
@@ -1012,11 +1016,12 @@ div[ref] {
 
 /* Section Headings */
 .chooseus__heading {
-  font-size: 26px;
-  color: #006666;
   margin-bottom: 10px;
   font-weight: bold;
   margin-top: 35px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: #106466;
   font-family: "Montserrat";
 }
 
@@ -1097,6 +1102,7 @@ div[ref] {
   font-weight: bold;
   margin: 0px 0;
   text-align: center;
+  font-family: "Montserrat";
 
   bottom: 48px;
   left: 20px;
