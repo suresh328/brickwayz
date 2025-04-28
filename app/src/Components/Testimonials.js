@@ -18,18 +18,14 @@ const Testimonials = () => {
     {
       subheading: "Our success stories",
       image: test,
-      quote1: "“Brickwayz Academy guided me to find the perfect university abroad. Their counseling support was exceptional every step of the way!”",
-      author1: "– Student",
-      quote2: "“Thanks to the expert guidance from Brickwayz Academy, my study abroad journey was smooth and stress-free. Highly recommend their counseling services!”",
-      author2: "– Alumnus",
+      quote1: "“Brickwayz Academy led me through eash step of my study abroad process. Their Customized approach made it so easy  and stress-free!”",
+    
     },
     {
       subheading: "Our success stories",
       image: test,
-      quote1: "“My dream to study overseas became a reality with Brickwayz Academy’s dedicated guidance.”",
-      author1: "– Student",
-      quote2: "“Their training programs and career advice prepared me for every challenge.”",
-      author2: "– Alumnus",
+      quote1: "“The career guidance at Brickwayz Academy guided me towards my rightful profession and laid the foundation for my success.”",
+     
     },
   ];
 
