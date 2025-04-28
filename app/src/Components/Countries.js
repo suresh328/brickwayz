@@ -56,7 +56,7 @@ const Countries = () => {
     <div className='main_container'>
       <section className="study-abroad-section">
         <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
+          <Link to="https://brickwayz.edumilestones.com/" className="program_linkbtn">
             Learn more
           </Link>
 
@@ -96,7 +96,7 @@ const Countries = () => {
 
         {/* Button */}
         <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Link to="https://brickwayz.edumilestones.com/abroad-studies/" className="program_linkbtn">
+          <Link to="https://brickwayz.edumilestones.com/" className="program_linkbtn">
             Apply online
           </Link>
         </div>
