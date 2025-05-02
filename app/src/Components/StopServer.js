@@ -9,7 +9,7 @@ const StopServer = () => {
             justifyContent:"center"
         }}>
         <div className="server-status">
-          <div className="emoji">😢</div>
+          <div className="emoji">404 error</div>
           <h2>Server is stopped</h2>
           <p>
             Can't reach the server.<br />
