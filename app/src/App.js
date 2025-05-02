@@ -13,6 +13,7 @@ import Testimonials from './Components/Testimonials';
 import ChooseUs from './Components/ChooseUs';
 import axios from 'axios';
 import { BrowserRouter } from 'react-router-dom';
+import StopServer from './Components/StopServer';
 
 function App() {
   const homeRef = useRef(null)
@@ -46,7 +47,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <div>
+      {/* <div>
         <Navbar sectionRefs={sectionRefs} />
 
         <div ref={homeRef} style={{ overflow: "hidden" }}><Hero /></div>
@@ -59,7 +60,8 @@ function App() {
         <FAQ />
         <div ref={contactRef}><Contact /></div>
         <Footer />
-      </div>
+      </div> */}
+      <StopServer/>
       </BrowserRouter>
     </>
   );

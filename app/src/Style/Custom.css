@@ -1164,6 +1164,61 @@ div[ref] {
 .chooseushovertext{
   font-size: 10px;
 }
+.server-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: #fff;
+  border: 1px solid #6c6c6c;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  max-width: 400px;
+  margin: 40px auto;
+  transition: all 0.3s ease;
+}
+
+.emoji {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.server-status h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.server-status p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.powered-by {
+  font-size: 13px;
+  color: #999;
+}
+
+.powered-by a {
+  color: #7977af;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.powered-by a:hover {
+  text-decoration: none;
+}
+
 /* =============== */
 /*  choose us */
 /* =============== */
