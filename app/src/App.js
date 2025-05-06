@@ -47,7 +47,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      {/* <div>
+      <div>
         <Navbar sectionRefs={sectionRefs} />
 
         <div ref={homeRef} style={{ overflow: "hidden" }}><Hero /></div>
@@ -60,8 +60,8 @@ function App() {
         <FAQ />
         <div ref={contactRef}><Contact /></div>
         <Footer />
-      </div> */}
-      <StopServer/>
+      </div>
+      {/* <StopServer/> */}
       </BrowserRouter>
     </>
   );
