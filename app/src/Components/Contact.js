@@ -48,12 +48,15 @@
 
 // export default Contact
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./../Style/Custom.css";
 import axios from "axios"
 import Swal from "sweetalert2";
 
 const Contact = () => {
+
+  const contactRef = useRef(null);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -68,13 +71,13 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       const response = await axios.post("https://brickwayz.onrender.com/api/sendmail", formData);
-  
+
       // Show SweetAlert success message
       Swal.fire({
         title: "Success!",
@@ -82,9 +85,9 @@ const Contact = () => {
         icon: "success",
         confirmButtonText: "Okay"
       });
-  
+
       setThankYouMessageVisible(true);
-  
+
       // Hide the thank you message after 5 seconds
       setTimeout(() => {
         setThankYouMessageVisible(false);
@@ -99,7 +102,7 @@ const Contact = () => {
         enquiry: "Career Counselling",
         message: ""
       });
-  
+
     } catch (error) {
       // Show SweetAlert error message
       Swal.fire({
@@ -113,7 +116,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="main_container" id="Contact">
+    <div className="main_container" id="Contact" ref={contactRef}>
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <h2 className="contact-title">Contact Form</h2>
@@ -181,7 +184,7 @@ const Contact = () => {
 
       {thankYouMessageVisible && (
 
-      <p className="tanking_you">THANK YOU! OUR TEAM WILL CONNECT WITH YOU SOON. HAPPY LEARNING!</p>
+        <p className="tanking_you">THANK YOU! OUR TEAM WILL CONNECT WITH YOU SOON. HAPPY LEARNING!</p>
       )}
     </div>
   );

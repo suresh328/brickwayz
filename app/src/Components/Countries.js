@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./../Style/Custom.css"
 import { Link } from "react-router-dom"
 
@@ -23,9 +23,10 @@ import explor10 from "./../Assets/explore/explor10.png"
 import explor11 from "./../Assets/explore/explor11.png"
 import explor12 from "./../Assets/explore/explor12.png"
 import explor13 from "./../Assets/explore/explor13.png"
+import Contact from './Contact'
 
 
-const Countries = () => {
+const Countries = ({contactRef}) => {
   const countries = [
     { name: "United States", img: country1 },
     { name: "United Kingdom", img: country2 },
@@ -51,6 +52,9 @@ const Countries = () => {
     { name: 'Environmental Studies', img: explor13 }
   ];
 
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className='main_container'>
@@ -96,9 +100,9 @@ const Countries = () => {
 
         {/* Button */}
         <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Link to="https://brickwayz.edumilestones.com/" className="program_linkbtn">
-            Apply online
-          </Link>
+          <button className="program_linkbtn" onClick={scrollToContact}>
+            Learn more
+          </button>
         </div>
 
 

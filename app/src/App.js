@@ -53,7 +53,7 @@ function App() {
         <div ref={homeRef} style={{ overflow: "hidden" }}><Hero /></div>
         <div ref={aboutRef}><About /></div>
         <div ref={programsRef}><Programs /></div>
-        <Countries />
+        <Countries contactRef={contactRef} />
         <ChooseUs />
         <div ref={testimonialsRef}><Testimonials /></div>
         <div ref={blogRef}><Blog /></div>
