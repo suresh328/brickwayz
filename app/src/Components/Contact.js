@@ -22,7 +22,8 @@ const Contact = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // Clear specific field validation error when user types
+
+    // Clear specific field error on change
     if (validationErrors[e.target.name]) {
       setValidationErrors({ ...validationErrors, [e.target.name]: null });
     }
@@ -31,9 +32,23 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Frontend validation
+    const newErrors = {};
+    if (!formData.firstName.trim()) newErrors.firstName = "First Name is required";
+    if (!formData.lastName.trim()) newErrors.lastName = "Last Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.phone.trim()) newErrors.phone = "Phone is required";
+    if (!formData.enquiry.trim()) newErrors.enquiry = "Enquiry is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+
+    // If any errors, show inline and stop submission
+    if (Object.keys(newErrors).length > 0) {
+      setValidationErrors(newErrors);
+      return;
+    }
+
     try {
-      // Clear previous errors
-      setValidationErrors({});
+      setValidationErrors({}); // Clear previous errors
 
       const response = await axios.post(
         "https://brickwayz.onrender.com/api/sendmail",
@@ -66,20 +81,11 @@ const Contact = () => {
         error.response.status === 400 &&
         error.response.data.errors
       ) {
-        // Show backend validation errors
-        const errors = {};
+        const backendErrors = {};
         error.response.data.errors.forEach((err) => {
-          errors[err.param] = err.msg;
+          backendErrors[err.param] = err.msg;
         });
-        setValidationErrors(errors);
-
-        Swal.fire({
-          title: "Validation Error",
-          text: "Please fix the highlighted fields.",
-          icon: "error",
-          confirmButtonText: "Okay"
-        });
-        console.log("Validation errors from backend:", errors);
+        setValidationErrors(backendErrors);
       } else {
         Swal.fire({
           title: "Error!",
@@ -87,83 +93,71 @@ const Contact = () => {
           icon: "error",
           confirmButtonText: "Okay"
         });
-        console.error("Error submitting form:", error);
       }
     }
   };
+
+
 
   return (
     <div className="main_container" id="Contact" ref={contactRef}>
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
         <h2 className="contact-title">Contact Form</h2>
-        <div className="contact-input-group">
-          <input
-            type="text"
-            name="firstName"
-            className={`contact-input ${
-              validationErrors.firstName ? "input-error" : ""
-            }`}
-            placeholder="*First Name"
-            value={formData.firstName}
-            onChange={handleChange}
-            required
-          />
-          {validationErrors.firstName && (
-            <p className="error-msg">{validationErrors.firstName}</p>
-          )}
 
-          <input
-            type="text"
-            name="lastName"
-            className={`contact-input ${
-              validationErrors.lastName ? "input-error" : ""
-            }`}
-            placeholder="*Last Name"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-          />
-          {validationErrors.lastName && (
-            <p className="error-msg">{validationErrors.lastName}</p>
-          )}
+        <div className="contact-input-group">
+          <div className="contact_name">
+            <input
+              type="text"
+              name="firstName"
+              className={`contact-input ${validationErrors.firstName ? "input-error" : ""}`}
+              placeholder="*First Name"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+            <span>{validationErrors.firstName && <p className="error-msg">{validationErrors.firstName}</p>}</span>
+          </div>
+
+          <div className="contact_last">
+            <input
+              type="text"
+              name="lastName"
+              className={`contact-input ${validationErrors.lastName ? "input-error" : ""}`}
+              placeholder="*Last Name"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+            {validationErrors.lastName && <p className="error-msg">{validationErrors.lastName}</p>}
+          </div>
         </div>
 
         <input
           type="email"
           name="email"
-          className={`contact-input ${
-            validationErrors.email ? "input-error" : ""
-          }`}
+          className={`contact-input ${validationErrors.email ? "input-error" : ""}`}
           placeholder="*Email Address"
           value={formData.email}
           onChange={handleChange}
           required
         />
-        {validationErrors.email && (
-          <p className="error-msg">{validationErrors.email}</p>
-        )}
+        {validationErrors.email && <p className="error-msg">{validationErrors.email}</p>}
 
         <input
           type="text"
           name="phone"
-          className={`contact-input ${
-            validationErrors.phone ? "input-error" : ""
-          }`}
+          className={`contact-input ${validationErrors.phone ? "input-error" : ""}`}
           placeholder="*Contact Number"
           value={formData.phone}
           onChange={handleChange}
           required
         />
-        {validationErrors.phone && (
-          <p className="error-msg">{validationErrors.phone}</p>
-        )}
+        {validationErrors.phone && <p className="error-msg">{validationErrors.phone}</p>}
 
         <label className="contact-label">Enquiry:</label>
         <select
           name="enquiry"
-          className={`contact-dropdown ${
-            validationErrors.enquiry ? "input-error" : ""
-          }`}
+          className={`contact-dropdown ${validationErrors.enquiry ? "input-error" : ""}`}
           value={formData.enquiry}
           onChange={handleChange}
         >
@@ -171,24 +165,18 @@ const Contact = () => {
           <option value="Study Abroad">Study Abroad</option>
           <option value="Training Programs">Training Programs</option>
         </select>
-        {validationErrors.enquiry && (
-          <p className="error-msg">{validationErrors.enquiry}</p>
-        )}
+        {validationErrors.enquiry && <p className="error-msg">{validationErrors.enquiry}</p>}
 
         <label className="contact-label">Message:</label>
         <textarea
           name="message"
-          className={`contact-textarea ${
-            validationErrors.message ? "input-error" : ""
-          }`}
+          className={`contact-textarea ${validationErrors.message ? "input-error" : ""}`}
           placeholder="Write description....."
           value={formData.message}
           onChange={handleChange}
           required
         ></textarea>
-        {validationErrors.message && (
-          <p className="error-msg">{validationErrors.message}</p>
-        )}
+        {validationErrors.message && <p className="error-msg">{validationErrors.message}</p>}
 
         <div className="contact_btn_contact">
           <button type="submit" className="contact-button">
